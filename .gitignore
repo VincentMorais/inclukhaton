@@ -1,0 +1,7 @@
+node_modules
+.vscode
+.idea
+data/
+.fusebox
+data_mongo/
+public/

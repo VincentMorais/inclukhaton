@@ -1,0 +1,33 @@
+import { InclukathonProgramService } from './inclukathon-program.service';
+import { InclukathonDto } from './models/dto/inclukathon.dto';
+import { SaveInclukathonDto } from './models/dto/creation/save.inclukathon.dto';
+import { SaveBaiDto } from './models/dto/creation/save.bai.dto';
+import { BaiDto } from './models/dto/bai.dto';
+import { BaiKthService } from './bai/bai-kth.service';
+import { KthScrAssociationDto } from './models/dto/kth-scr-association.dto';
+import { KthScrAssociationService } from './kthScrAssociation/kth-scr-association.service';
+import { SaveKthScrAssociationDto } from './models/dto/creation/save.kth-scr-association';
+import { DeliveryKthService } from './delivery/delivery-kth.service';
+import { DeliveriesDto } from './models/dto/deliveries.dto';
+import { SaveDeliveriesDto } from './models/dto/creation/save.deliveries.dto';
+import { SaveNotationDeliveryDto } from './models/dto/creation/save.notation-delivery.dto';
+import { NotationDeliveryDto } from './models/dto/notation-delivery.dto';
+export declare class InclukathonProgramController {
+    private readonly inclukathonProgramService;
+    private readonly baiProgramService;
+    private readonly kthScrAssociationService;
+    private readonly deliveryKthService;
+    constructor(inclukathonProgramService: InclukathonProgramService, baiProgramService: BaiKthService, kthScrAssociationService: KthScrAssociationService, deliveryKthService: DeliveryKthService);
+    findForCompanyAssociations(): Promise<InclukathonDto[]>;
+    saveDelivery(delivery: SaveDeliveriesDto): Promise<DeliveriesDto>;
+    saveNotationDelivery(notationToSaveDto: SaveNotationDeliveryDto): Promise<NotationDeliveryDto>;
+    saveBai(bai: SaveBaiDto): Promise<BaiDto>;
+    saveKthScrAssociation(kthScrAssociation: SaveKthScrAssociationDto): Promise<KthScrAssociationDto>;
+    save(inclukathon: SaveInclukathonDto): Promise<InclukathonDto>;
+    findOneScrAssociation(idKthScr: string): Promise<KthScrAssociationDto>;
+    findOneBai(idBai: string): Promise<BaiDto>;
+    findOneDelivery(idDelivery: string): Promise<DeliveriesDto>;
+    findOne(idInclukathon: string): Promise<InclukathonDto>;
+    findAll(): Promise<InclukathonDto[]>;
+    deleteOne(idInclukathon: string): Promise<InclukathonDto[]>;
+}

@@ -1,0 +1,34 @@
+import { UserDb } from '../entity/user.entity';
+import { TeamDto } from '../../team/dto/team.dto';
+import { CompanyDto } from '../../company/dto/company.dto';
+import { TeamDb } from '../../team/entities/team.entity';
+import { ILang } from '../../translations/LangUtils';
+import { WebinarDto } from '../../webinar/dto/webinar.dto';
+import { AvailableRegionDto } from '../../company/dto/availableRegion.dto';
+export declare class UserDto {
+    constructor(user: UserDb, token?: string);
+    id: string;
+    firstName: string;
+    lastName: string;
+    team: TeamDto | any;
+    email: string;
+    company: CompanyDto;
+    manageTeams?: TeamDb[] | any;
+    juryOfTeams?: TeamDb[] | any;
+    createdFromIncluscore?: boolean;
+    enabled?: boolean;
+    token?: string;
+    isSuperAdmin?: boolean;
+    isCompanyAdmin?: boolean;
+    avatarImgPath?: string;
+    studentNumber?: string;
+    presentationVideoPath?: string;
+    jobName?: string;
+    squadName?: string;
+    hasAPassword?: boolean;
+    lang?: ILang;
+    npsNotation?: number;
+    npsComment?: string;
+    webinars?: WebinarDto[];
+    region?: AvailableRegionDto;
+}

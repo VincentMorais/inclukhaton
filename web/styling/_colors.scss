@@ -1,0 +1,37 @@
+@mixin setColorsFromVarName($className) {
+  .c- {
+    &#{$className} {
+      color: var(--incluscore__#{$className});
+      &-bg {
+        background-color: var(--incluscore__#{$className});
+      }
+      &-border {
+        border: solid 1px var(--incluscore__#{$className});
+        border-radius: 8px;
+      }
+    }
+  }
+}
+:root {
+  --incluscore__scr-grey: #4C4F50;
+  --incluscore__sweet-purple: #ADB6FA;
+  --incluscore__strong-purple: #6C63FF;
+  --incluscore__rose: #FC1BA7;
+  --incluscore__warning: #FD9262;
+  --incluscore__flash-yellow: #FEE862;
+  --incluscore__liquorice: #222A3F;
+  --incluscore__coconut: #FFFFFF;
+  --incluscore__pepper: gray;
+  --incluscore__footergradient: linear-gradient(to right,#EE1B54 0% ,#5F8EE6 25%, #80569F 50%, #EE1B54 75%, #5F8EE6 100%);
+
+}
+@include setColorsFromVarName(scr-grey);
+@include setColorsFromVarName(sweet-purple);
+@include setColorsFromVarName(strong-purple);
+@include setColorsFromVarName(rose);
+@include setColorsFromVarName(warning);
+@include setColorsFromVarName(flash-yellow);
+@include setColorsFromVarName(liquorice);
+@include setColorsFromVarName(coconut);
+@include setColorsFromVarName(pepper);
+

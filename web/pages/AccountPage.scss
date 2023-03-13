@@ -1,0 +1,95 @@
+.account-page {
+  .video-fond{
+    /*border-radius: 10px;
+    padding: 10px 10px 1px;
+    background: linear-gradient(
+        to right, #5F8EE6 0%, #6C1BEE 25%, #E624D6 50%, #f09e3f 75%, #5F8EE6 100%,
+      );
+    background-size: 400% 100%;
+    background-repeat: no-repeat;
+        transition: background 2.5s ease-in-out; 
+    animation: example 7s linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;*/
+
+    border-radius: 10px;
+    padding: 10px 10px 0.2px;
+    background-image: var(--incluscore__profilegradient);
+    background-repeat: no-repeat;
+    background-size: 390% 100%;
+    background-position: 200% 100;
+    transition: background 2.5s ease-in-out; 
+    animation: example 4s linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    }
+
+    .profil-fond{
+      /*border-radius: 50%;
+      padding: 2%;
+      background: linear-gradient(
+        to right, #5F8EE6 0%, #6C1BEE 25%, #E624D6 50%, #f09e3f 75%, #5F8EE6 100%,
+      );
+      background-size: 400% 100%;
+      background-repeat: no-repeat;
+      transition: background 2.5s ease-in-out; 
+      animation: example 7s linear;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards;*/
+
+      border-radius: 50%;
+      padding: 2%;
+      background-image: var(--incluscore__profilegradient);
+      background-repeat: no-repeat;
+      background-size: 390% 100%;
+      background-position: 200% 100;
+      transition: background 2.5s ease-in-out; 
+      animation: example 4s linear;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards;
+    }
+
+  .desktop-small-column {
+    width: calc(100% / 3);
+  }
+  .desktop-long-column {
+    width: calc(100% / 3 * 2);
+  }
+  .account-team-pictures-container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .user-main-infos {
+    display: flex;
+    width: 100%;
+    .avatar-and-main-user-infos {
+      .my-profil-bloc {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 75%;
+        margin: auto;
+        gap: 2rem;
+        .img-avatar {
+          width: 50%;
+          margin-left: auto;
+          margin-right: 7rem;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes example {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

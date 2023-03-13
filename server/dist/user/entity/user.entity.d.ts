@@ -1,0 +1,36 @@
+import { Document } from 'mongoose';
+import * as mongoose from 'mongoose';
+import { TeamDb } from '../../team/entities/team.entity';
+import { CompanyDb } from '../../company/entities/company.entity';
+import { ILang } from '../../translations/LangUtils';
+import { WebinarDb } from '../../webinar/entities/webinar.entity';
+import { AvailableRegionDb } from '../../company/entities/availableRegion.entity';
+export declare type UserDocument = UserDb & Document;
+export declare class UserDb {
+    _id?: any;
+    firstName: string;
+    lastName: string;
+    enabled?: boolean;
+    email: string;
+    pwd?: string;
+    createdFromIncluscore?: boolean;
+    teamId?: TeamDb | any;
+    teamIds?: TeamDb[];
+    manageTeams?: TeamDb[] | any;
+    juryOfTeams?: TeamDb[] | any;
+    companyId?: CompanyDb | any;
+    companyAdmin?: boolean;
+    superAdmin?: boolean;
+    avatarImgPath?: string;
+    studentNumber?: string;
+    presentationVideoPath?: string;
+    jobName?: string;
+    squadName?: string;
+    hasAPassword?: boolean;
+    lang?: ILang;
+    npsNotation: number;
+    npsComment: string;
+    webinars?: WebinarDb[] | any[];
+    region?: AvailableRegionDb | any;
+}
+export declare const UserEntity: mongoose.Schema<Document<UserDb, any, any>, mongoose.Model<Document<UserDb, any, any>, any, any>, {}>;

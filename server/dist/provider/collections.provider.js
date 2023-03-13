@@ -1,0 +1,26 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.NOTATION_DELIVERY_COLLECTION_NAME = exports.LAUNCH_KTH_COLLECTION = exports.TEAM_DELIVERY_COLLECTION_NAME = exports.DELIVERIES_COLLECTION_NAME = exports.BAI_COLLECTION_NAME = exports.KTH_SCR_ASSOCIATION_COLLECTION_NAME = exports.INCLUKATHON_PROGRAM_COLLECTION_NAME = exports.USER_ANSWER_SCR_COLLECTION_NAME = exports.USER_THEME_SCR_COLLECTION_NAME = exports.LAUNCH_SCR_COLLECTION = exports.PROPOSITIONS_SCR_COLLECTION_NAME = exports.QUESTIONS_SCR_COLLECTION_NAME = exports.THEMES_SCR_COLLECTION_NAME = exports.INCLUSCORE_COLLECTION_NAME = exports.EMAIL_SENT_COLLECTION_NAME = exports.LOGIN_TOKENS_COLLECTION_NAME = exports.WEBINAR_COLLECTION_NAME = exports.AVAILABLE_REGION_COLLECTION_NAME = exports.TEAM_ARBORESCENCE_COLLECTION_NAME = exports.TEAM_COLLECTION_NAME = exports.COMPANY_COLLECTION_NAME = exports.USER_COLLECTION_NAME = void 0;
+exports.USER_COLLECTION_NAME = 'userinclukathons';
+exports.COMPANY_COLLECTION_NAME = 'companies';
+exports.TEAM_COLLECTION_NAME = 'teams';
+exports.TEAM_ARBORESCENCE_COLLECTION_NAME = 'team-arborescence';
+exports.AVAILABLE_REGION_COLLECTION_NAME = 'available-region';
+exports.WEBINAR_COLLECTION_NAME = 'webinar';
+exports.LOGIN_TOKENS_COLLECTION_NAME = 'logintokens';
+exports.EMAIL_SENT_COLLECTION_NAME = 'email-sent';
+exports.INCLUSCORE_COLLECTION_NAME = 'incluscores';
+exports.THEMES_SCR_COLLECTION_NAME = 'incluscorethemes';
+exports.QUESTIONS_SCR_COLLECTION_NAME = 'incluscorequestions';
+exports.PROPOSITIONS_SCR_COLLECTION_NAME = 'incluscorequestionspropositions';
+exports.LAUNCH_SCR_COLLECTION = 'scr-launch';
+exports.USER_THEME_SCR_COLLECTION_NAME = 'userthemes';
+exports.USER_ANSWER_SCR_COLLECTION_NAME = 'userthemeanswers';
+exports.INCLUKATHON_PROGRAM_COLLECTION_NAME = 'inclukathon-program';
+exports.KTH_SCR_ASSOCIATION_COLLECTION_NAME = 'kth-scr-association';
+exports.BAI_COLLECTION_NAME = 'boite-a-idee-kth';
+exports.DELIVERIES_COLLECTION_NAME = 'deliveries-kth';
+exports.TEAM_DELIVERY_COLLECTION_NAME = 'team-delivery';
+exports.LAUNCH_KTH_COLLECTION = 'kth-launch';
+exports.NOTATION_DELIVERY_COLLECTION_NAME = 'notation-delivery';
+//# sourceMappingURL=collections.provider.js.map

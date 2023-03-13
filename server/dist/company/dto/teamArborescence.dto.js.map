@@ -1,0 +1,1 @@
+{"version":3,"file":"teamArborescence.dto.js","sourceRoot":"","sources":["../../../src/company/dto/teamArborescence.dto.ts"],"names":[],"mappings":";;;AAEA,MAAa,mBAAmB;IAC/B,YAAY,kBAAsC;QACjD,IAAI,CAAC,EAAE,GAAI,kBAA+C,CAAC,GAAG,CAAC;QAC/D,IAAI,CAAC,IAAI,GAAG,kBAAkB,CAAC,IAAI,CAAC;QACpC,IAAI,CAAC,KAAK,GAAG,kBAAkB,CAAC,KAAK,CAAC;IACvC,CAAC;CAID;AATD,kDASC"}

@@ -1,0 +1,26 @@
+version: '3.9' 
+services: 
+  mongo: 
+    image: mongo:latest 
+    container_name: mongo
+    volumes:
+      # - ./data_mongo/db:/data/db
+      - ./dump:/dump
+    # command: sudo mongod --noauth --bind_ip=0.0.0.0
+    # restart: on-failure 
+    ports: 
+      - 27017:27017 
+    expose: 
+      - 27017
+  app: 
+    build: .
+    container_name: app
+    volumes:
+      - ./:/app
+    restart: on-failure
+    ports: 
+      - 5000:4000
+    expose:
+      - 5000
+    depends_on:
+      - mongo

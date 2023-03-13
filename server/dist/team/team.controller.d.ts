@@ -1,0 +1,31 @@
+import { TeamService } from './team.service';
+import { TeamDto } from './dto/team.dto';
+import { SaveTeamDto } from './dto/save.team.dto';
+import { CompanyService } from '../company/company.service';
+import { TeamDb } from './entities/team.entity';
+import { UserService } from '../user/service/user.service';
+import { LaunchIncluscoreService } from '../incluscore/progression/launch.incluscore.service';
+import { NotationDeliveryDto } from '../inclukathon-program/models/dto/notation-delivery.dto';
+import { DeliveryKthService } from '../inclukathon-program/delivery/delivery-kth.service';
+import { SaveNotationDeliveryDto } from '../inclukathon-program/models/dto/creation/save.notation-delivery.dto';
+import { TeamArborescenceDto } from '../company/dto/teamArborescence.dto';
+import { SaveTeamArborescenceDto } from '../company/dto/saveTeamArborescence.dto';
+export declare class TeamController {
+    private readonly teamService;
+    private readonly companyService;
+    private readonly userService;
+    private readonly launchService;
+    private readonly deliveryService;
+    constructor(teamService: TeamService, companyService: CompanyService, userService: UserService, launchService: LaunchIncluscoreService, deliveryService: DeliveryKthService);
+    saveProjectDescription(idTeam: string, projectDescription: string): Promise<TeamDto>;
+    save(saveTeamDto: SaveTeamDto): Promise<TeamDto>;
+    saveArborescence(saveTeamArborescenceDto: SaveTeamArborescenceDto): Promise<TeamArborescenceDto>;
+    saveNotation(saveNotationDto: SaveNotationDeliveryDto): Promise<NotationDeliveryDto>;
+    findAllArborescence(): Promise<TeamArborescenceDto[]>;
+    findAllArborescenceForTeamForm(idCompany: any): Promise<TeamArborescenceDto[]>;
+    findOne(id: string): Promise<TeamDto>;
+    findOneArborescence(id: string): Promise<TeamArborescenceDto>;
+    findAll(): Promise<TeamDto[]>;
+    deleteOne(idTeam: string, idCompany: string): Promise<TeamDb[]>;
+    deleteOneArborescence(idTeamArborescence: string, idCompany: string): Promise<TeamArborescenceDto[]>;
+}

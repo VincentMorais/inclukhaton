@@ -1,0 +1,82 @@
+:root {
+  --incluscore__main-gradiant: linear-gradient(
+                  90deg,
+                  rgba(243, 146, 0, 1),
+                  rgba(238, 27, 84, 1),
+                  rgba(128, 86, 159, 1)
+  );
+
+  --incluscore__main-gradiant-light: linear-gradient(
+                  90deg,
+                  rgba(243, 146, 0, 0.7),
+                  rgba(238, 27, 84, 0.7),
+                  rgba(128, 86, 159, 0.7)
+  );
+  --incluscore__main-gradiant-reversed: linear-gradient(
+                  90deg,
+                  rgba(128, 86, 159, 1),
+                  rgba(238, 27, 84, 1),
+                  rgba(243, 146, 0, 1)
+  );
+  --incluscore__main-gradiant-reversed-light: linear-gradient(
+                  90deg,
+                  rgba(128, 86, 159, 0.7),
+                  rgba(238, 27, 84, 0.7),
+                  rgba(243, 146, 0, 0.7)
+  );
+
+  --incluscore__main-gradiant-navbar-1: linear-gradient(
+    90deg,
+    rgba(95, 142, 230),
+    rgba(108, 27, 238, 0.7),
+    rgba(230, 36, 214, 0.7)
+);
+--incluscore__main-gradiant-navbar-1-hover: linear-gradient(
+  90deg,
+  rgba(230, 36, 214, 0.7)
+  rgba(108, 27, 238, 0.7),
+  rgba(95, 142, 230),
+);
+
+--incluscore__main-gradiant-navbar-2: linear-gradient(
+  90deg,
+  rgba(230, 36, 214, 0.7),
+  rgb(210, 122, 22),
+  rgba(230, 227, 36)
+);
+--incluscore__main-gradiant-navbar-2-hover: linear-gradient(
+  90deg,
+  rgba(230, 227, 36),
+  rgb(210, 122, 22),
+  rgba(230, 36, 214, 0.7),
+
+);
+--incluscore__main-gradiant-modify-profile: linear-gradient(
+  90deg,
+  rgb(95, 142, 230),
+  rgb(108, 27, 238, 0.7),
+  rgb(230, 36, 214, 0.7),
+  rgb(230, 36, 214, 0.7),
+  rgb(210, 122, 22),
+  rgb(230, 227, 36),
+);  
+--incluscore-gradient-modify-profile-hexa: linear-gradient(
+  90deg, #5F8EE6 , #6C1BEE , #E624D6 , #D27A16 , #E6E324 ,
+);
+
+--incluscore__profilegradient: linear-gradient(
+  90deg,#EE1B54 0% ,#F39200 25%, #80569F 50%, #EE1B54 75%, #F39200 100%
+  );
+}
+.inc-main-gradiant {
+  background: var(--incluscore__main-gradiant);
+}
+.inc-main-gradiant-light {
+  background: var(--incluscore__main-gradiant-light);
+}
+.inc-main-gradiant-reversed {
+  background: var(--incluscore__main-gradiant-reversed);
+}
+.inc-main-gradiant-reversed-light {
+  background: var(--incluscore__main-gradiant-reversed-light);
+}
